@@ -1,0 +1,5 @@
+<div class="container" role="banner">
+    <span> Find your github repositories here! </span>
+        <input type="username" class="form-control" placeholder="Enter Username" id="username" (keydown.enter)="goToRepositories()" style="width: 200px;" [formControl]="usernameForm">
+    <div class="btn btn-primary" (click)="goToRepositories()"> Find repositories </div>
+</div>

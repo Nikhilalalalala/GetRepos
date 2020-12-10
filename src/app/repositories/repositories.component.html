@@ -1,0 +1,15 @@
+
+<div>
+    <div class="top-details" >
+        <a class="back" routerLink="/"> Go Back</a>
+
+        <h3 *ngIf="this.repositories && !this.repositories.message">All repositories of {{username}}</h3>
+        <h3  *ngIf="this.repositories && this.repositories.message">No such user found</h3>
+    </div>
+
+    <div class="container" *ngIf="this.repositories && !this.repositories.message">
+        <div *ngFor="let repo of this.repositories" >
+            <app-repository-box [repo]="repo" ></app-repository-box>
+        </div>
+    </div>
+</div>

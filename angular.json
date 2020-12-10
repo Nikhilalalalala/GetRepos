@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "GetRepos": {
@@ -24,9 +24,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/css/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -88,9 +91,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/css/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GetRepos"
+    }
+  },
+  "defaultProject": "GetRepos",
+  "cli": {
+    "analytics": false
+  }
 }

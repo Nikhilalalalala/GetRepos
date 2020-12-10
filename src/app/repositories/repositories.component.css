@@ -1,0 +1,13 @@
+.top-details {
+    margin-left: 10px;
+    margin-bottom:20px;
+}
+
+.back {
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.back:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.row-details {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.repo-box {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 310px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.each-detail {
+    margin-left: 2px;
+}
+
+#name {
+    text-decoration: underline;
+    margin-bottom: 2px;
+}
